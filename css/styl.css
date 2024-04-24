@@ -1,0 +1,122 @@
+/*
+Author: Jeffrey Brunson
+Date: 1/24/24
+File Name: styl.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+	background-color: #05112b;
+}
+
+img {
+    max-width: 10%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+    top: 0;
+    background-color: #315488;
+    height: 190px;
+    font-family: 'francois one';
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Style rules for hamburger menu */
+/* nav {
+    background-color: #000;
+}*/
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile, .mobile-nav {
+    display: block;
+}
+
+.tablet-desktop, #menu-links{
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 2.5em;
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+
+}
+
+
+
+/* Style rules for footer content */
+footer p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+main p a:link{
+    color: #0000ff;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 630px), print {
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        display: inline-block;
+        border-right: 1px solid #000000;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1015px), print{
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        width: 70%;
+    }
+
+    nav li {
+        border: none;
+    }
+}
